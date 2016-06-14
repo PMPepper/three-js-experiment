@@ -1,6 +1,6 @@
 # three-js-experiment
 
-This project was created as something for me to experiment with, try out new technologies and techniques. Some of what is done here is slightly outdate, and would be done differently if I started again now (primarily proper bower integration, and more use of gulp automation).
+This project was created as something for me to experiment with, try out new technologies and techniques. Some of what is done here is slightly outdated, and would be done differently if I started again now (primarily proper bower integration, the use of a framwork for the app's state management outside the main game loop, more use of gulp automation and remove the bespoke build process).
 
 Due to browser security restrictions, this project must be run via a web server.
 
@@ -13,7 +13,7 @@ If you have node.js and gulp.js set up on you machine you can run it in a local 
 
 This should run a local web server and open the project.
 
-This is very much an ongoing experiment and in no way production code. Currently only really tested on Chrome (although no reason why it couldn't be made to work on other browsers).
+This is very much an ongoing experiment and in no way production code. Currently only really tested on Chrome on Windows (although no reason why it couldn't be made to work on other modern browsers).
 
 Right now the controls are set up to use game controllers only. If you have one, you can connect it to your machine and control your craft (Only tested as working on Chrome on windows). They could be configured to allow keyboard/mouse.
 
