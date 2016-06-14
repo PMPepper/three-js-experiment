@@ -9,7 +9,8 @@ If you have node.js and gulp.js set up on you machine you can run it in a local 
 -cloning the project
 -opening a command window
 -navigating to the project directory
--entering gulp browser-sync
+-If it's the first time, you'll need to run 'npm install'
+-type 'gulp browser-sync'
 
 This should run a local web server and open the project.
 
