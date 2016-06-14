@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+   <link href="favicon.ico" rel="icon" type="image/x-icon" />
+   <title>A3dsViewer WebGL - data</title>
+	<style>
+         body {
+            margin: 0px;
+            background-color: 0x000000;
+            overflow: hidden;
+         }
+	</style>
+</head>
+<body>
+   <script src="three.min.js"></script>
+   <script src="TrackballControls.js"></script>
+   <script src="data_0.js"></script>
+   <script src="data_1.js"></script>
+   <script src="data_2.js"></script>
+   <script src="data_3.js"></script>
+   <script src="data_4.js"></script>
+   <script src="data_5.js"></script>
+   <script src="data_6.js"></script>
+   <script src="data_7.js"></script>
+   <script src="data_8.js"></script>
+   <script src="data_9.js"></script>
+   <script src="data_10.js"></script>
+   <script src="data_11.js"></script>
+   <script src="data_12.js"></script>
+   <script src="data_13.js"></script>
+   <script src="data_14.js"></script>
+   <script src="data_15.js"></script>
+   <script src="data_16.js"></script>
+   <script src="data_17.js"></script>
+   <script src="data_18.js"></script>
+   <script src="data_19.js"></script>
+   <script src="data_20.js"></script>
+   <script src="data_21.js"></script>
+   <script src="data_22.js"></script>
+   <script src="data_23.js"></script>
+   <script src="data_24.js"></script>
+   <script src="data_25.js"></script>
+   <script src="data_26.js"></script>
+   <script src="data_27.js"></script>
+   <script src="data_28.js"></script>
+   <script src="data_29.js"></script>
+   <script src="data_30.js"></script>
+   <script src="data_31.js"></script>
+   <script src="data_32.js"></script>
+   <script src="data_33.js"></script>
+   <script src="data_34.js"></script>
+   <script src="data_35.js"></script>
+   <script src="data_36.js"></script>
+   <script src="data_37.js"></script>
+   <script src="data_38.js"></script>
+   <script src="data_39.js"></script>
+   <script src="data_40.js"></script>
+   <script src="data_41.js"></script>
+   <script src="data_42.js"></script>
+   <script src="data_43.js"></script>
+   <script src="data_44.js"></script>
+   <script src="data_45.js"></script>
+   <script src="data_46.js"></script>
+   <script src="data_47.js"></script>
+   <script src="data_48.js"></script>
+   <script src="data_49.js"></script>
+   <script src="data_50.js"></script>
+   <script src="data_51.js"></script>
+   <script src="data_52.js"></script>
+   <script src="data_53.js"></script>
+   <script src="data_54.js"></script>
+   <script src="data_55.js"></script>
+   <script src="data_56.js"></script>
+   <script src="data_57.js"></script>
+   <script src="data_58.js"></script>
+   <script src="data_59.js"></script>
+   <script src="data_60.js"></script>
+   <script src="data_61.js"></script>
+   <script src="data_62.js"></script>
+   <script src="data_63.js"></script>
+   <script src="data_64.js"></script>
+   <script src="data_65.js"></script>
+   <script src="data_66.js"></script>
+   <script src="data_67.js"></script>
+   <script src="data_68.js"></script>
+   <script src="data_69.js"></script>
+   <script src="data_70.js"></script>
+   <script src="data_71.js"></script>
+   <script src="data_72.js"></script>
+   <script>
+      var camera, scene, renderer;
+      var light;
+      var controls;
+
+      init();
+      animate();
+
+      function init() {
+
+         renderer = new THREE.WebGLRenderer();
+         renderer.setSize(window.innerWidth, window.innerHeight);
+         document.body.appendChild(renderer.domElement);
+         renderer.setClearColor(0x000000, 1);
+
+         camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 11.251,  1004.855);
+         camera.position.x = 27.999;
+         camera.position.y = -37.504;
+         camera.position.z = 26.825;
+         camera.up = new THREE.Vector3(0, 0, 1);
+         var target = new THREE.Vector3(0.000, 0.000, 0.000);
+         camera.lookAt(target);
+
+         controls = new THREE.TrackballControls(camera);
+         controls.addEventListener( 'change', render);
+
+         scene = new THREE.Scene();
+
+         light = new THREE.PointLight(0x999999);
+         light.position.set(22.502, -30.003, 45.005);
+         scene.add(light);
+         light = new THREE.PointLight(0x4C4C4C);
+         light.position.set(-30.003, -30.003, 22.502);
+         scene.add(light);
+         light = new THREE.PointLight(0x4C4C4C);
+         light.position.set(0.000, 30.003, 30.003);
+         scene.add(light);
+
+
+         create_geometry_0(scene);
+         create_geometry_1(scene);
+         create_geometry_2(scene);
+         create_geometry_3(scene);
+         create_geometry_4(scene);
+         create_geometry_5(scene);
+         create_geometry_6(scene);
+         create_geometry_7(scene);
+         create_geometry_8(scene);
+         create_geometry_9(scene);
+         create_geometry_10(scene);
+         create_geometry_11(scene);
+         create_geometry_12(scene);
+         create_geometry_13(scene);
+         create_geometry_14(scene);
+         create_geometry_15(scene);
+         create_geometry_16(scene);
+         create_geometry_17(scene);
+         create_geometry_18(scene);
+         create_geometry_19(scene);
+         create_geometry_20(scene);
+         create_geometry_21(scene);
+         create_geometry_22(scene);
+         create_geometry_23(scene);
+         create_geometry_24(scene);
+         create_geometry_25(scene);
+         create_geometry_26(scene);
+         create_geometry_27(scene);
+         create_geometry_28(scene);
+         create_geometry_29(scene);
+         create_geometry_30(scene);
+         create_geometry_31(scene);
+         create_geometry_32(scene);
+         create_geometry_33(scene);
+         create_geometry_34(scene);
+         create_geometry_35(scene);
+         create_geometry_36(scene);
+         create_geometry_37(scene);
+         create_geometry_38(scene);
+         create_geometry_39(scene);
+         create_geometry_40(scene);
+         create_geometry_41(scene);
+         create_geometry_42(scene);
+         create_geometry_43(scene);
+         create_geometry_44(scene);
+         create_geometry_45(scene);
+         create_geometry_46(scene);
+         create_geometry_47(scene);
+         create_geometry_48(scene);
+         create_geometry_49(scene);
+         create_geometry_50(scene);
+         create_geometry_51(scene);
+         create_geometry_52(scene);
+         create_geometry_53(scene);
+         create_geometry_54(scene);
+         create_geometry_55(scene);
+         create_geometry_56(scene);
+         create_geometry_57(scene);
+         create_geometry_58(scene);
+         create_geometry_59(scene);
+         create_geometry_60(scene);
+         create_geometry_61(scene);
+         create_geometry_62(scene);
+         create_geometry_63(scene);
+         create_geometry_64(scene);
+         create_geometry_65(scene);
+         create_geometry_66(scene);
+         create_geometry_67(scene);
+         create_geometry_68(scene);
+         create_geometry_69(scene);
+         create_geometry_70(scene);
+         create_geometry_71(scene);
+         create_geometry_72(scene);
+
+         window.addEventListener('resize', onWindowResize, false);
+      }
+
+      function onWindowResize() {
+
+         camera.aspect = window.innerWidth / window.innerHeight;
+         camera.updateProjectionMatrix();
+
+         renderer.setSize(window.innerWidth, window.innerHeight);
+
+         controls.handleResize();
+         render();
+      }
+
+      function animate()
+      {
+         requestAnimationFrame(animate);
+         renderer.render(scene, camera);
+         controls.update();
+      }
+
+      function render()
+      {
+         renderer.render(scene, camera);
+      }
+</script>
+</body>
+</html>

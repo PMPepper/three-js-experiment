@@ -1,0 +1,36 @@
+@import "blocks/ProgressWidget";
+
+body 
+{
+    padding:0;
+    margin:0;
+    height:100%;
+}
+
+canvas { display:block; }
+
+#edit{
+    position:absolute;
+    top:0;
+    left:0;
+    background:#FFF;
+    padding:10px;
+    
+}
+#edit label{
+    display:block;
+}
+
+#edit label span{
+    width:22px;
+    display:inline-block;
+}
+
+#edit input{
+    width:100px;
+}
+
+.AGameState{
+    height:100%;
+}
+

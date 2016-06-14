@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Three.js</title>
+        <link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+        <div id="gameHolder">
+			<div class="holder">
+				
+			</div>
+			<div class="templates">
+				<div class="init">
+					<div class="verticalWrapper">
+						<div class="verticalCenter">
+							<h1>Loading...</h1>
+							<div class="ProgressWidget">
+								<div class="ProgressWidget-base"></div>
+								<div class="ProgressWidget-bar"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="intro">
+					<div class="verticalWrapper">
+						<div class="verticalCenter">
+							<h1>Welcome to the game!</h1>
+							<button class="options">Options</button>
+							<button class="back">Back</button>
+						</div>
+					</div>
+				</div>
+				
+				<div class="error">
+					<div class="verticalWrapper">
+						<div class="verticalCenter">
+							<h1>Error loading game assets</h1>
+							<p>Please check your internet connection</p>
+						</div>
+					</div>
+				</div>
+				<div class="engine">
+				</div>
+				<comment>
+                    <div class="menu">
+                        <div class="verticalWrapper">
+                            <div class="verticalCenter menuPanel">
+                                <h2></h2>
+                                <div class="menuPanel-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="initworld">
+                        <div class="verticalWrapper">
+                            <div class="verticalCenter">
+                                <h1>Building world...</h1>
+                                <div class="ProgressWidget">
+                                    <div class="ProgressWidget-base"></div>
+                                    <div class="ProgressWidget-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </comment>
+			</div>
+		</div>
+        
+        <comment>
+            <div id="edit">
+                <form onsubmit="return false">
+                    <h2>Edit Shape</h2>
+                    <fieldset>
+                        <legend>Position</legend>
+                        <label><span>X: </span><input type="number" id="edit_pos_x" value="0" step="0.01" /></label>
+                        <label><span>Y: </span><input type="number" id="edit_pos_y" value="0" step="0.01" /></label>
+                        <label><span>Z: </span><input type="number" id="edit_pos_z" value="0" step="0.01" /></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Size</legend>
+                        <label><span>X: </span><input type="number" id="edit_size_x" value="0" step="0.01" /></label>
+                        <label><span>Y: </span><input type="number" id="edit_size_y" value="0" step="0.01" /></label>
+                        <label><span>Z: </span><input type="number" id="edit_size_z" value="0" step="0.01" /></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Rotation</legend>
+                        <label><span>X: </span><input type="range" name="edit_rot_x" id="edit_rot_x" value="0" step="0.01" min="-180" max="180" oninput="this.form[this.name+'_n'].value = this.value" /><input type="number" name="edit_rot_x_n" id="edit_rot_x_n" class="rangeOutput" step="0.01" oninput="this.form[this.name.substr( 0, this.name.length-2 )].value = this.value" /></label>
+                        <label><span>Y: </span><input type="range" name="edit_rot_y" id="edit_rot_y" value="0" step="0.01" min="-180" max="180" oninput="this.form[this.name+'_n'].value = this.value" /><input type="number" name="edit_rot_y_n" id="edit_rot_y_n" class="rangeOutput" step="0.01" oninput="this.form[this.name.substr( 0, this.name.length-2 )].value = this.value" /></label>
+                        <label><span>Z: </span><input type="range" name="edit_rot_z" id="edit_rot_z" value="0" step="0.01" min="-180" max="180" oninput="this.form[this.name+'_n'].value = this.value" /><input type="number" name="edit_rot_z_n" id="edit_rot_z_n" class="rangeOutput" step="0.01" oninput="this.form[this.name.substr( 0, this.name.length-2 )].value = this.value" /></label>
+                    </fieldset>
+                </form>
+        </div>
+        </comment>
+        
+        <comment>
+            <script src="assets/isd/data.js"></script>
+            <script src="assets/a_wing/data.js"></script>
+            <script src="assets/x_wing/data.js"></script>
+            <script src="assets/corvette/data.js"></script>
+            <script src="assets/millenium_falcon/data.js"></script>
+            <script src="assets/mon_calamari_cruiser/data.js"></script>
+            <script src="assets/nx_05/data.js"></script>
+            <script src="assets/nebulon_b/data.js"></script>
+            <script src="assets/y_wing/data.js"></script>
+        </comment>
+		<script src="js_src/app.js"></script>
+        <worker>
+            <script src="js_src/server.js"></script>
+        </worker>
+	</body>
+</html>

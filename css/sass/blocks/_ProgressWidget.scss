@@ -1,0 +1,49 @@
+.ProgressWidget
+{
+	width:50%;
+	max-width:500px;
+	margin:2em auto;
+	height:4em;
+	border-radius:3px;
+	border:2px solid #EEE;
+	position:relative;
+	
+	.ProgressWidget-base
+	{
+		background:#d1d1d1;
+		height:100%;
+	}
+	
+	.ProgressWidget-bar
+	{
+		position:absolute;
+		left:0;
+		top:0;
+		bottom:0;
+		transition:width 0.1s ease;
+		border-radius:3px;
+		background:#33DD33;
+	}
+	
+	&.ProgressWidget-layout_vertical
+	{
+		width:4em;
+		height:100%;
+		min-height:100px;
+		box-sizing:border-box;
+		
+		.ProgressWidget-base
+		{
+			min-height:100px;
+			
+		}
+		
+		.ProgressWidget-bar
+		{
+			transition:height 0.5s ease;
+			right:0;
+			top:auto;
+			bottom:0;
+		}
+	}
+}

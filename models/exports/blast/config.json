@@ -1,0 +1,12 @@
+{
+    "scale":[1,1,1],
+    "rotation":[0,0,0,1],
+    "position":[0,0,0],
+    "collision":{
+        "hull":{
+            "body":["box", 0, 0, 0, 0.01, 0.5, 0.01, 0, 0, 0, 1]
+        }
+    },
+    "performance":{},
+    "mass":0.01
+}
